@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+</head>
+<body>
+	<div class="container">
+		<h2 class="main-header">Human Detection Model Demo Results</h2>
+			<p>Detected {{ identified}} people</p>
+			
+            {% for i in range(identified): %}
+            <li>Person {{i}} average confidence:  {{'%0.2f'|format(score[i]|float)}}</li>
+	        {% endfor %}
+			
+            <a href="/" role = "button" >Go Back</a>
+		</div>
+	</div>
+</body>
+</html>

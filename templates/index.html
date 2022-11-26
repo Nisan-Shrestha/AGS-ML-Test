@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+</head>
+<body>
+	<article>
+		<h2 class="main-header">Human Detection Model Demo</h2>
+		
+		<form id = "myForm" action="/result" method="post" enctype="multipart/form-data">
+			<p >Upload a picture</p>
+			<input type="file" id="img" name="img" accept=".jpg, .jpeg" class="query">
+			<input type="submit" class="btnInfo" value="Predict"  >
+		</form>
+		<br>
+		<h4>Note: Please make sure the face is clearly visible and subject is well it for best results.</h4>
+		<h4>Detects upto 6 person max.</h4>
+	</article>
+	
+</body>
+</html>
